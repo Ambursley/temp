@@ -1,0 +1,24 @@
+    @font-face{
+        font-family:"Averta W05 Black";
+        src:url("Fonts/5218687/aba97dfc-be26-42b8-9925-0fb07fcb471b.woff2") format("woff2"),url("Fonts/5218687/c5bcd25e-fd66-4f17-b5cf-1fa6ff81e44d.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Averta W05 Black Italic5225663";
+        src:url("Fonts/5225663/ee836e64-bcaa-4ce0-a8af-824330353b93.woff2") format("woff2"),url("Fonts/5225663/bdb5b372-0e5a-4312-b669-24984ff2ac01.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Averta W05 Regular Italic";
+        src:url("Fonts/5316231/70ef2721-ac99-4308-aa80-824dab8f04e8.woff2") format("woff2"),url("Fonts/5316231/de0e91b2-229b-4a84-ad01-e7f0aa752a30.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Averta W05 ExtraBold Italic";
+        src:url("Fonts/5330739/b652f2a2-6711-4f13-ab80-e30ea18711f4.woff2") format("woff2"),url("Fonts/5330739/3e7a7535-af3f-4f59-bf15-f5462716fbec.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Averta W05 Regular5345108";
+        src:url("Fonts/5345108/d02cc25f-189b-4af6-a351-cd55c66a0de5.woff2") format("woff2"),url("Fonts/5345108/17c318a8-9db6-4ddc-84ec-d7aac0a16946.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Averta W05 ExtraBold";
+        src:url("Fonts/5348477/6ada8443-8508-4921-b90c-21905186652c.woff2") format("woff2"),url("Fonts/5348477/88c52f02-ec9b-4792-aceb-6ab75a4e2eac.woff") format("woff");
+    }
