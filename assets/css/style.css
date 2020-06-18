@@ -111,7 +111,7 @@ h6 {
 }
 
 h1 {
-    font-family: "Averta W05 Regular5345108";
+    font-family: "Averta W05 ExtraBold";
     font-size: 40px;
 }
 
@@ -383,7 +383,7 @@ p {
 }
 
 
-/* Preloader Animations */
+/* Preloader Animations 
 
 @-webkit-keyframes ytp-spinner-linspin {
     to {
@@ -617,6 +617,58 @@ p {
         -o-transform: rotate(-130deg);
         transform: rotate(-130deg);
     }
+}
+
+*/
+
+.preload {
+    overflow: hidden;
+}
+
+.loading {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    text-align: center;
+    z-index: 99999;
+}
+
+.loading .progress-bar {
+    background: #ED0F69;
+    height: 5px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: all 1s cubic-bezier(0.72, 0.16, 0.345, 0.875);
+    width: 0;
+    z-index: 99999;
+}
+
+.loading-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 99999;
+}
+
+.loading-wrap .logotype {
+    width: 7.14rem;
 }
 
 
@@ -857,6 +909,15 @@ p {
     }
 }
 
+@media (max-width: 400px) {
+    .navbar .navbar-btn {
+        position: absolute;
+        right: 10px !important;
+        top: 0;
+     
+    }
+}
+
 .header-banner {
     height: 700px;
     position: relative;
@@ -882,27 +943,35 @@ p {
     height: 100%;
 }
 
+@media (max-width: 500px) {
+.header-banner .banner-image { 
+    width: 100%;
+    height: 100%;
+   
+}
+.header-banner .banner-content {
+    display: none;
+}
+}
+
 .header-banner .banner-content {
     position: relative;
     z-index: 9;
 }
 
 .header-banner .banner-content .sub-title {
-    font-family: "Averta W05 ExtraBold";
-    font-size: 24px;
-    color: #ed125f;
-    
+    font-family: "Averta W05 ExtraBold Italic";
+    font-size: 47px;
+    color: #44474F;
 }
 
 @media (max-width: 767px) {
     .header-banner .banner-content .sub-title {
-        margin-top: -10px !important;
-        font-size: 18px;
+        font-size: 24px;
     }
 }
 
 .header-banner .banner-content .banner-title {
-    margin-top: -150px !important;
     font-size: 45px;
 }
 
@@ -912,7 +981,6 @@ p {
 
 @media (max-width: 767px) {
     .header-banner .banner-content .banner-title {
-        margin-top: -10px !important;
         font-size: 38px;
     }
 }
@@ -958,6 +1026,7 @@ p {
     position: relative;
 }
 
+/*
 .about-image::before {
     position: absolute;
     content: '';
@@ -975,6 +1044,7 @@ p {
     transform: translate(-50%, -50%);
     z-index: -1;
 }
+*/
 
 @media (max-width: 767px) {
     .about-image::before {
@@ -989,7 +1059,7 @@ p {
 }
 
 .about-image .single-image {
-    width: 360px;
+    width: 500px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1435,12 +1505,14 @@ p {
     position: relative;
 }
 
+/*
 @media (max-width: 767px) {
     .testimonial-area {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
+*/
 
 .testimonial-area .shape {
     position: absolute;
@@ -1491,7 +1563,7 @@ p {
 }
 
 .testimonial-active {
-    background-color: #ed125f;
+    background-color: #fff;
     padding: 60px 30px;
 }
 
@@ -1529,23 +1601,29 @@ p {
     border-radius: 50%;
 }
 
+.single-testimonial .testimonial-content {
+    max-width: 600px !important;
+    margin: auto;
+}
+
 .single-testimonial .testimonial-content p {
+    margin-top: 20px !important;
     font-size: 18px;
-    color: #fff;
+    color: #44474F;
     font-family: "Averta W05 Regular5345108", sans-serif;
 }
 
 .single-testimonial .testimonial-content .testimonial-name {
     font-family: "Averta W05 Regular5345108", sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: #44474F;
     font-weight: 600;
 }
 
 .single-testimonial .testimonial-content .sub-title {
     font-family: "Averta W05 Regular5345108", sans-serif;
     font-size: 14px;
-    color: #fff;
+    color: #44474F;
 }
 
 .testimonial-active .slick-dots {
@@ -1563,7 +1641,7 @@ p {
     height: 15px;
     border-radius: 50px;
     border: 0;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(152, 152, 152, 0.5);
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
@@ -1574,7 +1652,7 @@ p {
 }
 
 .testimonial-active .slick-dots li.slick-active button {
-    background-color: #fff;
+    background-color: #ed125f;
     width: 25px;
 }
 
@@ -1717,12 +1795,11 @@ p.form-message.error {
 @media (max-width: 767px) {
     .footer-widget {
         padding-top: 30px;
-        padding-bottom: 80px;
     }
 }
 
 .footer-logo a img {
-    width: 140px;
+    width: 200px;
 }
 
 .footer-logo p {
@@ -1732,6 +1809,7 @@ p.form-message.error {
 
 .footer-logo .footer-info li {
     margin-top: 20px;
+    color: #44474F !important;
 }
 
 .footer-logo .footer-info li .single-info {
@@ -1768,12 +1846,14 @@ p.form-message.error {
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    background-color: #fff5f1;
-    color: #646464;
+    background-color: #ffffff;
+    color: #44474F;
     font-size: 16px;
-    -webkit-box-shadow: 0px 5px 21px 0px rgba(254, 119, 101, 0.4);
-    -moz-box-shadow: 0px 5px 21px 0px rgba(254, 119, 101, 0.4);
-    box-shadow: 0px 5px 21px 0px rgba(254, 119, 101, 0.4);
+    /*
+    -webkit-box-shadow: 0px 5px 21px 0px rgba(121, 121, 121, 0.47);
+    -moz-box-shadow: 0px 5px 21px 0px rgba(121, 121, 121, 0.47);
+    box-shadow: 0px 5px 21px 0px rgba(121, 121, 121, 0.47);
+    */
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
